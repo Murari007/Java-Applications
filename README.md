@@ -1,7 +1,7 @@
-# Demo 
+# Java Applications
 
-Some Description about the project!
+This repository contains the some of the Applications created by using the Java language
 
-## Subheader
 
-Watch the Video in the Youtube.
+## Content 
+The main applications include creation of games and app development related applications.
