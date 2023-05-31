@@ -26,7 +26,7 @@ public class WeatherRVModel {
         return temperature;
     }
 
-    public void setTemperature(String temperarure) {
+    public void setTemperature(String temperature) {
         this.temperature = temperature;
     }
 
