@@ -4,13 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black_shade_1"
     tools:context=".MainActivity">
 
     <ProgressBar
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id = "@+id/idPBloading"
-        android:visibility="gone"
+        android:visibility="visible"
         android:layout_centerInParent="true"
         />
 
@@ -31,7 +32,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/idTvCityName"
+            android:id="@+id/idTVCityName"
             android:text="City Name"
             android:textAlignment="center"
             android:gravity="center"
@@ -46,7 +47,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:id="@+id/idLLet"
-            android:layout_below="@id/idTvCityName"
+            android:layout_below="@id/idTVCityName"
             android:weightSum="5"
             >
             <com.google.android.material.textfield.TextInputLayout
@@ -117,6 +118,26 @@
             android:text="Condition"
             android:textColor="@color/white"
             android:layout_below="@id/idIVIcon"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_marginBottom="10dp"
+            android:text="Today's Weather Forecast"
+            android:textColor="@color/white"
+            android:layout_above="@id/idRVWeather"
+            android:textStyle="bold"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/idRVWeather"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             />
 
 
